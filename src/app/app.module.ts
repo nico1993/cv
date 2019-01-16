@@ -5,20 +5,20 @@ import { AppRoutingModule } from './app-routing.module';
 
 //Components
 import { AppComponent } from './app.component';
-import { PagesComponent } from './components/pages/pages.component';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
-import { AboutComponent } from './components/about/about.component';
+import { PagesComponent } from './pages/pages.component';
+import { SidebarComponent } from './pages/sidebar/sidebar.component';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
     AppComponent,
     PagesComponent,
-    SidebarComponent,
-    AboutComponent
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

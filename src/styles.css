@@ -7,6 +7,10 @@ body, p {
     color: #666666;
 }
 
+body {
+    background-color: #f3f3f3;
+}
+
 @media only screen and (min-width: 991px)
 {
     ::-webkit-scrollbar {
@@ -19,189 +23,20 @@ body, p {
 @media only screen and (min-width: 991px)
 {
     ::-webkit-scrollbar-thumb {
-        background-color: #7d7fc7;
+        background-color: #dedede;
         outline: 1px solid slategrey;   
         height: 10px;     
     }
+}
+
+.full-height {
+    height: 100%;
 }
 
 a {
     text-decoration: none;
 }
 
-/* Header */
-
-@media only screen and (min-width: 991px)
-{
-    .header {
-        width: 160px;
-    }
-}
-
-.header {
-    background-color: rgba(255, 255, 255, 1);
-}
-
-.header {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    padding: 10px 0 0;
-    background-color: #fff;
-    overflow: auto;
-    z-index: 11;
-}
-
-.header .header-content {
-    position: relative;
-    margin: 0 auto;
-    min-height: 100%;
-    padding-bottom: 50px;
-    padding-left: 0;
-    padding-right: 0;
-}
-
-.header * {
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    -ms-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-}
-
-.header-image {
-    position: relative;
-    margin: 20px auto;
-    text-align: center;
-    z-index: 0;
-}
-
-.header-image img {
-    height: auto;
-    max-height: 80px;
-    width: auto;
-    max-width: 80px;
-}
-
-.site-title-block {
-    position: relative;
-    z-index: 1;
-    margin: 20px 20px 10px;
-    text-align: center;
-}
-
-.site-title {
-    font-family: Poppins, Helvetica, sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-    font-style: normal;
-    line-height: 1.2em;
-    color: #333333;
-    letter-spacing: 0px;
-}
-
-/* Navigation header */
-
-.site-nav {
-    display: block;
-    position: relative;
-    padding: 25px 0 40px;
-}
-
-.dl-menuwrapper .dl-menu.dl-menuopen {
-    opacity: 1;
-    pointer-events: auto;
-    -webkit-transform: translateY(0);
-    transform: translateY(0);
-}
-
-.dl-menuwrapper .dl-menu {
-    margin: 0;
-    width: 100%;
-    opacity: 0;
-    pointer-events: none;
-    -webkit-transform: translateY(10px);
-    transform: translateY(10px);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-.dl-menuwrapper ul {
-    padding: 0;
-    list-style: none;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-}
-
-.site-main-menu li {
-    display: block;
-    position: relative;
-    padding: 0;
-    text-align: center;
-}
-
-.site-main-menu li a:hover, .site-main-menu li.active a, .site-main-menu li.current-menu-item a, .dl-back > a {
-    background-color: #fcfcfc;
-}
-
-.site-main-menu:not(.dl-menu) li:first-child a, .kerge-classic-menu > li:first-child a, .site-main-menu li a, .site-main-menu li a:hover {
-    border-color: #f5f5f5;
-}
-
-.site-main-menu:not(.dl-menu) li:first-child a, .kerge-classic-menu>li:first-child>a {
-    border-top: 1px solid #f5f5f5;
-}
-
-.site-main-menu li a, .site-main-menu li a:hover {
-    font-family: Poppins, Helvetica, sans-serif;
-    font-size: 14px;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1.85em;
-    color: #333333;
-    letter-spacing: 0px;
-}
-
-.site-main-menu li a, .site-main-menu li a:hover {
-    display: block;
-    position: relative;
-    padding: 10px 20px;
-    text-align: center;
-    color: #222;
-    font-size: 15px;
-    font-weight: 400;
-    position: relative;
-    text-decoration: none;
-    border-bottom: 1px solid #f5f5f5;
-    outline: none;
-}
-
-.header .social-links {
-    display: inline-block;
-    position: relative;
-    width: 100%;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-.header .social-links a {
-    display: inline-block;
-    margin: 0 2px;
-    width: 28px;
-    height: 28px;
-    color: #888;
-    background-color: #eee;
-    text-align: center;
-}
-
-.header .social-links a i {
-    font-size: 14px;
-    line-height: 28px;
-}
-
-.header .social-links a:hover {
-    color: #fff;
-    background-color: #7d7fc7;
+*, ::after, ::before {
+    box-sizing: border-box;
 }
