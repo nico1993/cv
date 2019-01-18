@@ -1,0 +1,15 @@
+.full-name {
+    font-size: 48px;
+    line-height: 1.2em;
+    margin-bottom: 15px;
+}
+
+.work-position {
+    color: #888;
+    font-weight: 300;
+}
+
+.secondary-section i {
+    font-size: 7em;
+    margin-bottom: 15px;
+}

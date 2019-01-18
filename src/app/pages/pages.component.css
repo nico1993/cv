@@ -22,6 +22,5 @@
 
 .site-main > .page-content > .content {
     background-color: #fff;
-    height: 100%;
-    padding-top: 15px;
+    padding: 50px;
 }
