@@ -108,15 +108,15 @@
 }
 
 .navigation .navigation-list a:hover {
-    border-color: #f5f5f5;
-    background-color: #3f42ad; 
+    /* border-color: #c5c5c5; */
+    background-color: #6a9ea9; 
     color: #fff !important;
-    /* OLD COLOR 7d7fc7 */
 }
 
 .navigation .navigation-list li a.active {
-    background-color: #3f42ad;
+    background-color: #7cc5d4;
     color: #fff !important;
+    /* border-color: #c5c5c5; */
 }
 
 .navigation .navigation-list > li:first-child > a {
@@ -150,5 +150,5 @@
 
 .header .social-links a:hover {
     color: #fff;
-    background-color: #3f42ad;
+    background-color: #7ec2d0;
 }

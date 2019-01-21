@@ -1,5 +1,5 @@
 <section id="primary-section">
-  <h2>Curriculum</h2>
+  <h2 class="section-title">Curriculum</h2>
   <hr>
   <div class="row">
     <div class="col-7">
@@ -9,38 +9,59 @@
           <span></span>
         </h3>
       </div>
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus ea, possimus molestias recusandae harum earum
-        atque. Dignissimos assumenda labore quod aspernatur ea? Ea soluta accusamus consequuntur sunt eum in architecto.</p>
+      <div class="timeline">
+        <div class="timeline-item" *ngFor="let education of _resume.educations">
+          <div class="left">
+            <h5 class="item-period">{{ education.Year }}</h5>
+            <small>{{ education.College }}</small>
+          </div>
+          <div class="divider"></div>
+          <div class="right">
+            <h4 class="item-title">{{ education.Title }}</h4>
+            <p>{{ education.Detail }}</p>
+          </div>
+        </div>
+      </div>
       <div class="main-title">
         <h3>
           Experiencia
           <span></span>
         </h3>
       </div>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestiae quam, voluptatum ut, quisquam est excepturi
-        doloremque nisi consequuntur, tempora maxime maiores neque ad! Incidunt corrupti vitae labore enim, est vel.</p>
+      <div class="timeline">
+        <div class="timeline-item" *ngFor="let experience of _resume.experiences">
+          <div class="left">
+            <h5 class="item-period">{{ experience.Period }}</h5>
+            <small>{{ experience.Company }}</small>
+          </div>
+          <div class="divider"></div>
+          <div class="right">
+            <h4 class="item-title">{{ experience.Position }}</h4>
+            <p>{{ experience.Detail }}</p>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="col-5">
       <div class="main-title">
         <h3>
-          Habilidades A
+          Habilidades
           <span></span>
         </h3>
       </div>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit natus adipisci assumenda quos repellendus, delectus dolorem
-        earum accusamus architecto iusto aliquid maxime, eum fuga dignissimos a ad harum inventore tempore.
-      </p>
-      <div class="main-title">
-        <h3>
-          Habilidades B
-          <span></span>
-        </h3>
+      <div class="skills-info skills-second-style" *ngFor="let skill of _resume.skills">
+        <div class="row">
+          <div class="col-6">
+            <h4>{{ skill.Name }}</h4>
+          </div>
+          <div class="col-6 text-right">
+            <h4>+{{ skill.Experience }} {{ skill.ExperienceFormat }}</h4>
+          </div>
+        </div>
+        <div class="skill-container">
+          <div class="skill-percentage" [ngStyle]="{'width.%': skill.HabilityLevel}"></div>
+        </div>
       </div>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit natus adipisci assumenda quos repellendus, delectus dolorem
-        earum accusamus architecto iusto aliquid maxime, eum fuga dignissimos a ad harum inventore tempore.
-      </p>
     </div>
   </div>
 </section>

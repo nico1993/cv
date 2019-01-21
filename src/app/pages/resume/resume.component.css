@@ -1,0 +1,87 @@
+.timeline .timeline-item {
+    position: relative;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    padding-bottom: 15px;
+}
+
+.timeline .left {
+    width: 30%;
+    display: table-cell;
+    padding-right: 25px;
+    min-height: 100%;
+    text-align: right;
+    vertical-align: top;
+}
+
+.timeline .divider {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    bottom: 0;
+    width: 1px;
+    background-color: #eee;
+}
+
+.timeline .divider:after {
+    content: '';
+    display: block;
+    margin-top: 7px;
+    width: 11px;
+    height: 11px;
+    margin-left: -5px;
+    border-radius: 5px;
+    border: 2px solid #34c7a9;
+    background-color: #fff;
+}
+
+.timeline .right {
+    width: 70%;
+    display: table-cell;
+    padding-left: 25px;
+    padding-right: 15px;
+    vertical-align: top;
+}
+
+.timeline .item-title, .timeline .item-period {
+    font-size: 16px;
+    margin-bottom: 3px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+
+/*Skills*/
+
+.skills-info.skills-second-style h4 {
+    font-size: 13px;
+    margin: 0 0 4px;
+    font-weight: bolder;
+}
+
+.skills-second-style .skill-container {
+    position: relative;
+    background-color: transparent;
+    border: 1px solid #0099e5;
+    -moz-border-radius: 8px;
+    -webkit-border-radius: 8px;
+    border-radius: 8px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    height: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.skills-second-style .skill-percentage {
+    background-color: #0099e5;
+    border: 2px solid #fff;
+    -moz-border-radius: 9px;
+    -webkit-border-radius: 9px;
+    border-radius: 9px;
+    height: 8px;
+    padding: 0;
+}

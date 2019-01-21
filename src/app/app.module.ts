@@ -8,6 +8,7 @@ import { AppComponent } from './app.component';
 import { PagesComponent } from './pages/pages.component';
 import { SidebarComponent } from './pages/sidebar/sidebar.component';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { RouterModule } from '@angular/router';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule 
+    RouterModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
