@@ -17,35 +17,77 @@ export class ResumeService {
   response = {
     educations: [
       {
-        College: "Sarasa",
-        Title: "SarasaTitle",
+        College: "Escuela de Programación",
+        Title: "Programador Web",
+        Year: 2014,
+        Detail: ["HTML5, CSS3, PHP, MYSQL"]
+      },
+      {
+        College: "UTN FRM",
+        Title: "Técnico Superior en Programación",
         Year: 2015,
-        Detail: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum magnam a expedita, repudiandae excepturi ipsa aperiam eaque, corporis nulla dolorem, necessitatibus vero temporibus. Provident fugiat ex obcaecati repellat quam similique."
+        Detail: [""]
       },
       {
-        College: "Sarasa",
-        Title: "SarasaTitle",
-        Year: 2016,
-        Detail: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum magnam a expedita, repudiandae excepturi ipsa aperiam eaque, corporis nulla dolorem, necessitatibus vero temporibus. Provident fugiat ex obcaecati repellat quam similique."
+        College: "Udemy",
+        Title: "Angular (7+): De cero a experto creando aplicaciones",
+        Year: 2018,
+        Detail: [
+          "Base sólida para trabajar con Angular",
+          "Nuevos conceptos del ECMAScript 6",
+          "Introducción a Ionic",
+          "Conceptos de TypeScript"
+        ]
       },
       {
-        College: "Sarasa",
-        Title: "SarasaTitle",
-        Year: 2017,
-        Detail: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum magnam a expedita, repudiandae excepturi ipsa aperiam eaque, corporis nulla dolorem, necessitatibus vero temporibus. Provident fugiat ex obcaecati repellat quam similique."
+        College: "Udemy",
+        Title: "Angular Avanzado: Lleva tus bases al siguiente nivel - MEAN STACK",
+        Year: 2018,
+        Detail: [
+          "Módulos, servicios y lazyload",
+          "Creación de backend con Mongo y ExpressJs",
+          "JWT",
+          "Pruebas unitarias y de integración"
+        ]
+      },
+      {
+        College: "Udemy",
+        Title: "Angular: Convierte cualquier template HTML en una WebAPP",
+        Year: 2018,
+        Detail: [
+          "Uso de Angular y Firebase",
+          "Desplegar una aplicación en producción",
+          "Conocimiento necesario para migrar cualquier template a una aplicación de Angular"
+        ]
+      },
+      {
+        College: "Udemy",
+        Title: "Angular: Convierte cualquier template HTML en una WebAPP",
+        Year: 2019,
+        Detail: [
+          "Uso de sockets en el lado del cliente y servidor",
+          "Emisión y escucha de eventos por medio de sockets.",
+          "Crear aplicaciones en tiempo real"
+        ]
       },
     ],
     experiences: [
       {
-        Position: "Software developer",
+        Position: "PHP / C# / Angular Developer",
         Period: "2015 - Actualidad",
-        Detail: "Detalle",
+        Detail: [
+          "Resolución de problemas y requerimientos de productos propios de la empresa",
+          "Mantener constantemente el soporte de la plataforma FacturaciónWEB",
+          "Mantenimiento de bases de datos"
+        ],
         Company: "Soluciones IT"
       },
       {
         Position: "Freelancer",
         Period: "2018 - Actualidad",
-        Detail: "Detalle",
+        Detail: [
+          "Desarrollo de actualizaciones para un sistema en ASP.NET"
+        ],
         Company: ""
       }
     ],
@@ -55,6 +97,26 @@ export class ResumeService {
         Experience: 3,
         ExperienceFormat: "Años",
         HabilityLevel: 70
+      },
+      {
+        Name: "Angular",
+        Experience: 3,
+        ExperienceFormat: "Años",
+        HabilityLevel: 70,
+        Icon: 'skill-icon fab fa-angular',
+        IconStyle: {
+          'color': '#e23237'
+        }
+      },
+      {
+        Name: "NodeJs",
+        Experience: 3,
+        ExperienceFormat: "Años",
+        HabilityLevel: 70,
+        Icon: 'skill-icon fab fa-node',
+        IconStyle: {
+          'color': '#3e863d'
+        }
       }
     ]
   };

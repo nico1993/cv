@@ -1,0 +1,31 @@
+.portfolio-grid {
+    margin-left: -7px;
+    margin-right: -7px;
+    position: relative;
+    overflow: hidden;
+    height: 480.406px;
+    transition: height 450ms ease-out 0s;
+}
+
+figure {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    visibility: visible;
+    transition: transform 450ms ease-out 0s, opacity 450ms ease-out 0s;
+}
+
+.portfolio-grid.three-columns figure {
+    width: 33.33333%;
+}
+
+.portfolio-item-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.portfolio-grid img {
+    position: relative;
+    display: block;
+    width: 100%;
+}

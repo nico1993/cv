@@ -66,3 +66,10 @@ a {
     margin-top: 2px;
     background-color: #7cc5d4;
 }
+
+.animate {
+    -webkit-animation-duration: 0.3;
+    animation-duration: 0.3;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}

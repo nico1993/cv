@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ResumeService } from '../../services/resume.service';
+import { transition, trigger, style, state, animate } from '@angular/animations';
 
 @Component({
   selector: 'app-resume',

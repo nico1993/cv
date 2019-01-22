@@ -1,3 +1,3 @@
 export class Skill {
-    constructor(public Name:string, public Experience:number, public ExperienceFormat:string, public HabilityLevel:number) {}
+    constructor(public Name:string, public Experience:number, public ExperienceFormat:string, public HabilityLevel:number, public Icon?: string) {}
 }

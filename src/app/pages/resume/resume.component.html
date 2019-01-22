@@ -18,7 +18,7 @@
           <div class="divider"></div>
           <div class="right">
             <h4 class="item-title">{{ education.Title }}</h4>
-            <p>{{ education.Detail }}</p>
+            <div *ngFor="let detail of education.Detail">{{ detail }}</div>
           </div>
         </div>
       </div>
@@ -37,7 +37,7 @@
           <div class="divider"></div>
           <div class="right">
             <h4 class="item-title">{{ experience.Position }}</h4>
-            <p>{{ experience.Detail }}</p>
+            <div *ngFor="let detail of experience.Detail">{{ detail }}</div>
           </div>
         </div>
       </div>
@@ -52,7 +52,7 @@
       <div class="skills-info skills-second-style" *ngFor="let skill of _resume.skills">
         <div class="row">
           <div class="col-6">
-            <h4>{{ skill.Name }}</h4>
+            <h4><i *ngIf="skill.Icon" [class]="skill.Icon" [ngStyle]="skill.IconStyle"></i> {{ skill.Name }}</h4>
           </div>
           <div class="col-6 text-right">
             <h4>+{{ skill.Experience }} {{ skill.ExperienceFormat }}</h4>

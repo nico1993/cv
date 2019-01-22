@@ -1,3 +1,8 @@
+.timeline {
+    max-height: 300px;
+    overflow-y: scroll;
+}
+
 .timeline .timeline-item {
     position: relative;
     display: table;
@@ -49,14 +54,16 @@
     margin-bottom: 3px;
     font-weight: 600;
     color: #333333;
-    margin-bottom: 10px;
 }
 
+.timeline .item-title {
+    margin-bottom: 10px;
+}
 
 /*Skills*/
 
 .skills-info.skills-second-style h4 {
-    font-size: 13px;
+    font-size: 15px;
     margin: 0 0 4px;
     font-weight: bolder;
 }
@@ -84,4 +91,9 @@
     border-radius: 9px;
     height: 8px;
     padding: 0;
+    width: 0%;
+}
+
+.skill-icon {
+    font-size: 20px;
 }
