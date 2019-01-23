@@ -1,0 +1,38 @@
+.card-contacts .card-body {
+    background-color: #495057;
+    color: #fff;
+}
+
+.card-contacts .card:hover {
+    box-shadow: 10px 10px 17px rgba(0,0,0,.12);
+    -webkit-box-shadow: 10px 10px 17px rgba(0,0,0,.12);
+    -moz-box-shadow: 10px 10px 17px rgba(0,0,0,.12);
+    -o-box-shadow: 10px 10px 17px rgba(0,0,0,.12);
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+}
+
+.card-contacts .card-text {
+    color: #fff;
+    font-size: 18px;
+}
+
+.card-contacts .card-text > a {
+    text-decoration: none;
+    color: #fff;
+}
+
+input, textarea {
+    border-radius: 0;
+}
+
+.form-contact {
+    margin-top: 50px;
+}
+
+.btn-flat {
+    border-radius: 0;
+}

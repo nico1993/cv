@@ -1,3 +1,47 @@
-<p>
-  contact works!
-</p>
+<section id="primary-section">
+  <h2 class="section-title">Contacto</h2>
+  <hr>
+  <div class="card-deck card-contacts">
+    <div class="card" *ngFor="let contact of _contact.contacts">
+      <div class="card-body">
+        <h5 class="card-title text-center"><i [class]="contact.icon"></i></h5>
+        <p class="card-text text-center">
+          <a [href]="contact.link" *ngIf="contact.link" target="_blank">{{ contact.detail }}</a>
+          <span *ngIf="!contact.link">{{ contact.detail }}</span>
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <form class="form-contact" novalidate>
+    <div class="form-row">
+      <div class="col-md-4 offset-md-4 text-center">
+        <div class="main-title">
+          <h3>
+            Envíame un mensaje
+            <span></span>
+          </h3>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control is-valid " required placeholder="Nombre completo">
+          <div class="valid-feedback">
+              Todo ok
+            </div>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control is-invalid" placeholder="Email">
+          <div class="invalid-feedback">
+              Please choose a username.
+            </div>
+        </div>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Asunto">
+        </div>
+        <div class="form-group">
+          <textarea rows="5" class="form-control" placeholder="Mensaje"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block btn-flat"><i class="fas fa-paper-plane"></i> Enviar</button>
+      </div>
+    </div>
+  </form>
+</section>
