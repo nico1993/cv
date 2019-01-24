@@ -13,7 +13,7 @@
     </div>
   </div>
 
-  <form class="form-contact" novalidate>
+  <form class="form-contact" novalidate #contactForm="ngForm" (ngSubmit)="enviar(contactForm)">
     <div class="form-row">
       <div class="col-md-4 offset-md-4 text-center">
         <div class="main-title">
@@ -23,24 +23,38 @@
           </h3>
         </div>
         <div class="form-group">
-          <input type="text" class="form-control is-valid " required placeholder="Nombre completo">
-          <div class="valid-feedback">
-              Todo ok
-            </div>
-        </div>
-        <div class="form-group">
-          <input type="text" class="form-control is-invalid" placeholder="Email">
+          <input type="text" class="form-control" [ngClass]="{'is-invalid': name.invalid && name.touched, 'is-valid': name.valid}"
+            placeholder="Nombre completo" #name="ngModel" name [(ngModel)]="contact.name" name="name" required>
           <div class="invalid-feedback">
-              Please choose a username.
-            </div>
+            <span *ngIf="name.errors?.required">Campo requerido</span>
+          </div>
         </div>
         <div class="form-group">
-          <input type="text" class="form-control" placeholder="Asunto">
+          <input type="text" class="form-control" [ngClass]="{'is-invalid': email.invalid && email.touched, 'is-valid': email.valid}"
+            placeholder="Email" #email="ngModel" [(ngModel)]="contact.email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+          <div class="invalid-feedback">
+            <span *ngIf="email.errors?.required">Campo requerido</span>
+          </div>
+          <div class="invalid-feedback">
+            <span *ngIf="email.errors?.pattern">El campo debe contener un formato de email correcto</span>
+          </div>
         </div>
         <div class="form-group">
-          <textarea rows="5" class="form-control" placeholder="Mensaje"></textarea>
+          <input type="text" class="form-control" [ngClass]="{'is-invalid': subject.invalid && subject.touched, 'is-valid': subject.valid}"
+            placeholder="Asunto" #subject="ngModel" [(ngModel)]="contact.subject" name="subject" required>
+          <div class="invalid-feedback">
+            <span *ngIf="subject.errors?.required">Campo requerido</span>
+          </div>
         </div>
-        <button type="submit" class="btn btn-primary btn-block btn-flat"><i class="fas fa-paper-plane"></i> Enviar</button>
+        <div class="form-group">
+          <textarea rows="5" class="form-control" [ngClass]="{'is-invalid': message.invalid && message.touched, 'is-valid': message.valid}"
+            placeholder="Mensaje" #message="ngModel" [(ngModel)]="contact.message" name="message" required></textarea>
+          <div class="invalid-feedback">
+            <span *ngIf="message.errors?.required">Campo requerido</span>
+          </div>
+        </div>
+        <button [disabled]="contactForm.invalid" type="submit" class="btn btn-primary btn-block btn-flat"><i class="fas fa-paper-plane"></i>
+          Enviar</button>
       </div>
     </div>
   </form>
